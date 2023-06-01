@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: img-konference-static
+    build: .
+    container_name: konference-static
+    restart: always
+    ports:
+      - "8080:80"
